@@ -1,7 +1,0 @@
-    <div>
-        <% for( let index = 0; index < memoryStored.length; index++ ) { %>
-            <p>Title <% memoryStored[index].bookTitle %> </p>
-            <p>comments <% memoryStored[index]comments %></p>
-            <p>rating <% memoryStored[index].rating %></p>
-        <% } %>
-    </div>

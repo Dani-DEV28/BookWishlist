@@ -1,0 +1,14 @@
+* {
+    background-color:darkgreen;
+    color:blanchedalmond
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+button {
+    background: green;
+}

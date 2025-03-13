@@ -37,14 +37,7 @@ app.post('/summary', (req, res) => {
         rating: rating,
     };
 
-    console.log(storeValues.bookTitle);
-    console.log(storeValues.comments);
-    console.log(storeValues.rating);
-
     memoryStored.push(storeValues);
-
-    console.log(memoryStored[0].bookTitle);
-    console.log(memoryStored[0].comments);
 
     res.render('summary', {memoryStored});
 })

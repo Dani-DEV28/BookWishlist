@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <div>
@@ -12,9 +13,9 @@
 
     <div>
         <form action="summary" method="post">
-            <input type="tel" placeholder = "Title of the book" name="bookTitle" id="bookTitle">
-            <textarea placeholder = "comments" name ="comments" id="comments"></textarea>
-            <select name="rating" id="rating">
+            <input type="tel" placeholder = "Title of the book" name="bookTitle" id="bookTitle" required>
+            <textarea placeholder = "comments" name ="comments" id="comments" required></textarea>
+            <select name="rating" id="rating" required>
                 <option value="one" name = "star">ONE</option>
                 <option value="two" name = "star">TWO</option>
                 <option value="three" name = "star">THREE</option>
