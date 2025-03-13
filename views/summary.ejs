@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Summary</h1>
+    </div>
+    <div>
+        <% for( let index = 0; index < memoryStored.length; index++ ) { %>
+            <p>Title <%= memoryStored[index].bookTitle %> </p>
+            <p>comments <%= memoryStored[index].comments %></p>
+            <p>rating <%= memoryStored[index].rating %></p>
+        <% } %>
+    </div>
+</body>
+</html>
