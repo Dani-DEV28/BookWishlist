@@ -24,8 +24,26 @@ app.post('/summary', (req, res) => {
     const {
         bookTitle,
         comments,
-        rating
     } = req.body;
+
+    let rating = req.body.rating;
+
+    const ratingType = ["one", "two", "three", "four", "five"];
+
+    let ratingTrue = true;
+
+    for (let index = 0; index < ratingType.length; index++) {
+        if (rating == ratingType[index]){
+            ratingTrue = true;
+            break;
+        }else {
+            ratingTrue = false;
+        }
+    }
+
+    if (!ratingTrue) {
+        rating = "";
+    }
 
     console.log(bookTitle);
     console.log(comments);
